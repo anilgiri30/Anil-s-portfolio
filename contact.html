@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Anil Giri</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><a href="index.html">Anil Giri</a></div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="contactSection">
+            <h1>Get In <span class="text-purple">Touch</span></h1>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Always happy to connect! Feel free to reach out for work, ideas, or just a friendly hello.</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>girianil934@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p>+977 981425645</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Location</h3>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    
+                    <h2>Social Profiles</h2>
+                    <div class="social-links">
+                        <a href="https://github.com/anilgiri30" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100022150354234/" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                       </a>
+                        <a href="https:linkedin.com/in/anil-giri-938401356/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <h3>Anil Giri</h3>
+            </div>
+            
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://github.com/anilgiri30" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100022150354234/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    
+                      
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-rights">
+           Copyright &copy; 2025 | Anil Giri | All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Form validation and submission logic would go here
+            alert('Thanks for reaching out! I’ll respond shortly.');
+            this.reset();
+        });
+    </script>
+  </body>
+</html>
